@@ -1,0 +1,116 @@
+/**Titre de site et image**/
+.titredusite {
+	text-align: center;
+	line-height: normal;
+	background-color: rgba(56, 109, 181, 0.25);
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: white;
+}
+.soustitredusite {
+	font-size: 1.5rem;
+}
+
+.esp-sp {
+	/*Espace entre titre de site et contenu*/
+	height: 17vh;
+}
+
+/*Menu général à remplacer par le menu déroulant*/
+.menuprincipal {
+	display: none;
+}
+
+.menuderoulant {
+	display: inline;
+}
+
+/*Coordonnées générales*/
+.coordonnees {
+	display: flex;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 0.5rem var(--bleu);
+	flex-direction: column;
+	width: 230px;
+	margin: auto;
+}
+.itemcoordonnees {
+	width: 200px;
+	text-align: center;
+	line-height: 0.8rem;
+}
+.imagecoordonnees {
+	height: 1rem;
+}
+.liencoordonnees {
+	color: white;
+	font-size: 0.75rem;
+}
+
+/*Titres de sections*/
+h2 {
+	font-size: 1.6rem;
+	color: white;
+	background-image: linear-gradient(var(--bleu), var(--vert));
+	padding: 1rem 0;
+	margin-left: -1rem;
+}
+
+/*SPÉCILAEMENT POUR LE MENU DÉROULANT */
+
+.menuderoulant {
+	border: #386db5 solid 2px;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 0.5rem var(--bleu);
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.sousmenud {
+	border-left: #386db5 solid 2px;
+	border-radius: 0 0 5% 5%;
+	box-shadow: 0.5rem 0.5rem 0.5rem var(--bleu);
+	width: 90%;
+	margin: auto;
+}
+
+.titremenud,
+.itemmenud {
+	padding: 0 1rem;
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.titremenud {
+	border-bottom: #386db5 solid 1px;
+	color: var(--bleu);
+	font-size: 1rem;
+	line-height: 1.8rem;
+	height: 1.8rem; /*hauteur de la partie visible*/
+	overflow: hidden;
+}
+
+.itemmenud {
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	color: var(--vert);
+	background-color: white;
+	border-top: #62bc46 1px solid;
+}
+
+.titremenud:hover {
+	overflow: visible;
+	z-index: 0;
+	color: white;
+	background-color: var(--bleu);
+}
+
+.itemmenud:hover {
+	color: white;
+	background-color: var(--vert);
+}
